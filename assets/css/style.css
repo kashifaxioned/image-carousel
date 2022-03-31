@@ -133,7 +133,7 @@ h2 {
 .slider2, .slider3, .slider4, .slider5 { display: none;}
 
 .carousel-list-item {
-  transition: 1s ease;
+ animation: fadeIn 1s;
 }
 
 .control-section {
@@ -152,7 +152,14 @@ h2 {
   text-transform: capitalize;
 }
 
+@keyframes fadeIn {
+ 0% { opacity: 0; }
+ 25% { opacity: .25; }
+ 50% { opacity: .5; }
+ 75% { opacity: .75; }
+100% { opacity: 1; }
 
+}
 
 
 /*=================================
