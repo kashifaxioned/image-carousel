@@ -98,10 +98,10 @@ li {
 }
 
 /*for wrapper*/
-.wrapper {
-  max-width: 1360px;
-  width: 86%; 
-  margin: 0 auto;
+.wrapper { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*=================================
   Header styling starts here
@@ -120,9 +120,37 @@ li {
   main styling starts here
 =================================*/
 
+.carousel-section { padding: 100px 0; }
 
+h2 {
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #663399;
+  text-align: center;
+}
 
+.slider2, .slider3, .slider4, .slider5 { display: none;}
 
+.carousel-list-item {
+  transition: 1s ease;
+}
+
+.control-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.control-btn {
+  padding: 10px 0;
+  border: none;
+  flex-basis: 50%;
+  background-color: #4398db;
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+}
 
 
 
