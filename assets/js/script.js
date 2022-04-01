@@ -12,6 +12,7 @@ nextBtn.addEventListener("click", handleNext);
 
 function carousel() {
   currentSlide++;
+  slides.forEach((slide) => { slide.className = "slideLeft" })
   carouselChange();
 }
 
@@ -26,12 +27,14 @@ function carouselChange() {
 
 function handlePrev() {
   currentSlide--;
+  slides.forEach((slide) => { slide.className = "slideRight" })
   carouselChange();
   resetInterval();
 }
 
 function handleNext() {
   currentSlide++;
+  slides.forEach((slide) => { slide.className = "slideLeft" })
   carouselChange();
   resetInterval();
 }
